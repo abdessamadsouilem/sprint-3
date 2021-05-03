@@ -6,6 +6,8 @@ class Fighter {
     public $strength;
     public $dexterity;
     public $life = MAX_LIFE ;
+    public $min;
+    public $max;
     
 
 
@@ -17,7 +19,16 @@ class Fighter {
       }
     
 
+        function fight($min,$max) {
+      $this->min=$min;
+      $this->max=$max;
+      return  rand($min, $max);
+    
+    } 
+    
+
 }
+
 
 
 ?>
